@@ -1,1271 +1,27 @@
 [
   {
-    "command": "damcorp",
-    "botId": 1,
-    "description": "damcorp",
-    "triggers": [
-      {
-        "pattern": ".",
-        "type": "regexp",
-        "id": 293
-      }
-    ],
-    "variables": [
-      {
-        "name": "_answ_sampel_gratis",
-        "type": "string",
-        "id": 100
-      },
-      {
-        "name": "_answ_nomor_tdk_terdaftar_exp",
-        "type": "string",
-        "id": 356
-      },
-      {
-        "name": "_answ_daftar_akun_format_salah",
-        "type": "string",
-        "id": 129
-      },
-      {
-        "name": "_answ_submit_kode_tc_error",
-        "type": "string",
-        "id": 171
-      },
-      {
-        "name": "_answ_tukar_hadiah_tc_error",
-        "type": "string",
-        "id": 399
-      },
-      {
-        "name": "_answ_technical_error",
-        "type": "string",
-        "id": 274
-      },
-      {
-        "name": "_answ_consent_tidak_setuju",
-        "type": "string",
-        "id": 239
-      },
-      {
-        "name": "_answ_exception",
-        "type": "string",
-        "id": 199
-      },
-      {
-        "name": "_answ_tukar_hadiah_additional",
-        "type": "string",
-        "id": 358
-      },
-      {
-        "name": "_answ_tukar_hadiah_gagal_1",
-        "type": "string",
-        "id": 239
-      },
-      {
-        "name": "_answ_submit_kode_unik_gagal_1",
-        "type": "string",
-        "id": 356
-      },
-      {
-        "name": "_answ_submit_kode_unik_td",
-        "type": "string",
-        "id": 311
-      },
-      {
-        "name": "_answ_daftar_akun_gagal",
-        "type": "string",
-        "id": 237
-      },
-      {
-        "name": "_answ_submit_kode_unik_gagal",
-        "type": "string",
-        "id": 59
-      },
-      {
-        "name": "_answ_tukar_hadiah_gagal",
-        "type": "string",
-        "id": 113
-      },
-      {
-        "name": "_answ_nomor_tidak_terdaftar",
-        "type": "string",
-        "id": 150
-      },
-      {
-        "name": "_answ_menu_utama",
-        "type": "string",
-        "id": 32
-      },
-      {
-        "name": "_answ_user_consent",
-        "type": "string",
-        "id": 272
-      },
-      {
-        "name": "_answ_reset_password",
-        "type": "string",
-        "id": 350
-      },
-      {
-        "name": "_answ_edit_email",
-        "type": "string",
-        "id": 229
-      },
-      {
-        "name": "_answ_cek_poin",
-        "type": "string",
-        "id": 268
-      },
-      {
-        "name": "_answ_tukar_hadiah_sukses",
-        "type": "string",
-        "id": 269
-      },
-      {
-        "name": "_answ_tukar_hadiah",
-        "type": "string",
-        "id": 173
-      },
-      {
-        "name": "_answ_daftar_rewards",
-        "type": "string",
-        "id": 291
-      },
-      {
-        "name": "_answ_submit_kode_unik_sukses",
-        "type": "string",
-        "id": 73
-      },
-      {
-        "name": "_answ_submit_kode_unik",
-        "type": "string",
-        "id": 16
-      },
-      {
-        "name": "_answ_daftar_akun_sukses",
-        "type": "string",
-        "id": 329
-      },
-      {
-        "name": "_answ_daftar_akun_konfirmasi",
-        "type": "string",
-        "id": 369
-      },
-      {
-        "name": "_answ_daftar_akun",
-        "type": "string",
-        "id": 461
-      },
-      {
-        "name": "_answ_default",
-        "type": "string",
-        "id": 179
-      },
-      {
-        "name": "question_1",
-        "type": "string"
-      },
-      {
-        "name": "question_2",
-        "type": "string"
-      },
-      {
-        "name": "question_3",
-        "type": "string"
-      }
-    ],
+    "id": "0-0-0-0-0",
+    "command": "hello",
+    "description": "Respond when a human says hello!",
     "script": [
       {
         "topic": "default",
         "script": [
           {
             "text": [
-              "Halo Bunda/Ayah, Selamat Datang di layanan Whatsapp DANCOW Parenting Center. Kami ingin menginformasikan bahwa dengan memulai percakapan ini Bunda/Ayah bersedia menerima informasi dan komunikasi dari PT Nestlé Indonesia. Data pribadi Bunda/Ayah diproses dengan mengacu pada Kebijakan Kerahasiaan https://www.dancow.co.id/dpc/privacy. Bunda/Ayah dapat menarik persetujuan dengan menghubungi kami kapan saja.\n\nKetik \"Ya\" untuk SETUJU melanjutkan."
-            ],
-            "collect": {
-              "key": "_answ_default",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "text": [
-              ""
-            ],
-            "collect": null
-          },
-          {
-            "action": "complete",
-            "selected_scripts_threads": [
-              {
-                "topic": "default",
-                "script": [
-                  {
-                    "text": [
-                      "Halo Bunda/Ayah, Selamat Datang di layanan Whatsapp DANCOW Parenting Rewards. Kami ingin menginformasikan bahwa dengan memulai percakapan ini Bunda/Ayah bersedia menerima informasi dan komunikasi dari PT Nestle Indonesia. Data pribadi Bunda/Ayah diproses dengan mengacu pada Kebijakan Kerahasiaan https://parentingrewards.dancow.co.id/privacy. Bunda/Ayah dapat menarik persetujuan dengan menghubungi kami kapan saja."
-                    ],
-                    "collect": {
-                      "key": "_answ_default",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "menu_utama"
-                  }
-                ]
-              },
-              {
-                "topic": "on_timeout",
-                "script": [
-                  {
-                    "text": [
-                      "Looks like you got distracted. We can continue later."
-                    ]
-                  },
-                  {
-                    "action": "timeout"
-                  }
-                ]
-              },
-              {
-                "topic": "daftar_akun",
-                "script": [
-                  {
-                    "text": [
-                      "Bunda memilih untuk mendaftar akun baru, informasikan data diri Bunda dengan membalas pesan ini dengan format: NAMA LENGKAP#EMAIL#TANGGAL LAHIR ANAK.\n\nTanggal lahir anak dalam format DD/MM/YYYY\n\nContoh: Dewi Ariani#ariani.dewi@gmail.com#08/08/2017"
-                    ],
-                    "collect": {
-                      "key": "_answ_daftar_akun",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "daftar_akun_konfirmasi",
-                "script": [
-                  {
-                    "text": [
-                      "Apakah Bunda memiliki kode SPG? Jika ada, silakan masukan kode SPG, jika tidak ada, silahkan ketik 0."
-                    ],
-                    "collect": {
-                      "key": "_answ_daftar_akun_konfirmasi",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "daftar_akun_berhasil",
-                "script": [
-                  {
-                    "text": [
-                      "Terima kasih telah bergabung menjadi member DANCOW Parenting Rewards. Member ID Bunda/Ayah adalah *{{vars.member_code}}*. Sebuah email telah dikirimkan untuk Bunda/Ayah berisi panduan untuk melakukan login dan penggantian password di parentingrewards.dancow.co.id\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_daftar_akun_sukses",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "submit_kode_unik",
-                "script": [
-                  {
-                    "text": [
-                      "Bunda memilih untuk submit kode unik pada akun *{{vars.member_code}}*. Silahkan masukkan kode unik."
-                    ],
-                    "collect": {
-                      "key": "_answ_submit_kode_unik",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "submit_kode_unik_sukses",
-                "script": [
-                  {
-                    "text": [
-                      "Selamat Bunda/Ayah telah berhasil submit kode unik dan mendapatkan *{{vars.poin_submitted}}* poin. Total Poin DANCOW Parenting Rewards Bunda/Ayah saat ini adalah *{{vars.current_balance}}* poin. Tingkatkan terus poin Bunda/Ayah dan tukarkan dengan berbagai hadiah menarik.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_submit_kode_unik_sukses",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "daftar_rewards",
-                "script": [
-                  {
-                    "text": [
-                      "Untuk melihat katalog hadiah, Bunda/Ayah dapat mengunduhnya dengan mengklik link berikut ini : rewards.bit.ly/rewardsDancow\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_daftar_rewards",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "tukar_hadiah",
-                "script": [
-                  {
-                    "text": [
-                      "Bunda memilih untuk tukar hadiah. Silakan masukkan kode reward yang Bunda inginkan."
-                    ],
-                    "collect": {
-                      "key": "_answ_tukar_hadiah",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "tukar_hadiah_sukses",
-                "script": [
-                  {
-                    "text": [
-                      "Permintaan Bunda/Ayah sedang diproses. Mohon menunggu 2x24 jam hari kerja. Untuk informasi lebih lanjut silahkan hubungi 0800 1821028 (tekan 2).\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_tukar_hadiah_sukses",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "cek_poin",
-                "script": [
-                  {
-                    "text": [
-                      "Bunda/Ayah memilih untuk cek poin. Poin Bunda/Ayah untuk member ID *{{vars.member_code}}* pada tanggal {{vars.date}} adalah *{{vars.current_balance}}* poin. Tingkatkan terus poin Bunda/Ayah dan tukarkan dengan berbagai hadiah menarik.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_cek_poin",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "edit_email",
-                "script": [
-                  {
-                    "text": [
-                      "Perubahan email terdaftar hanya bisa dilakukan melalui Nestle Consumer Services di nomor 08001821028(tekan 2). Syarat dan ketentuan berlaku.\n\nApakah ada lagi yang Bunda butuhkan?\n\n1. Daftar Akun\n2. Submit Kode Unik\n3. Lihat Daftar Hadiah\n4. Tukar Hadiah\n5. Cek Point Balance\n6. Edit Email\n7. Reset Password\n\nSilahkan Bunda balas dengan mengetik nomor pada pilihan di atas."
-                    ],
-                    "collect": {
-                      "key": "_answ_edit_email",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "reset_password",
-                "script": [
-                  {
-                    "text": [
-                      "Perubahan password bisa dilakukan pada website parentingrewards.dancow.id. Klik MASUK dan pilih Lupa Password, lalu ikuti petunjuk. Info lebih lanjut hubungi 08001821028(tekan 2). Syarat dan ketentuan berlaku.\n\nApakah ada lagi yang Bunda butuhkan?\n\n1. Daftar Akun\n2. Submit Kode Unik\n3. Lihat Daftar Hadiah\n4. Tukar Hadiah\n5. Cek Point Balance\n6. Tanya CS\n7. Tanya Expert\n\nSilahkan Bunda balas dengan mengetik nomor pada pilihan di atas."
-                    ],
-                    "collect": {
-                      "key": "_answ_reset_password",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "menu_utama",
-                "script": [
-                  {
-                    "text": [
-                      "Halo Bunda/Ayah,\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_menu_utama",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "nomor_tidak_terdaftar",
-                "script": [
-                  {
-                    "text": [
-                      "Maaf, nomor Bunda/Ayah tidak terdaftar. Silahkan lakukan registrasi.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_nomor_tidak_terdaftar",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "submit_kode_unik_gagal",
-                "script": [
-                  {
-                    "text": [
-                      "Maaf, kode unik yang Bunda masukkan {{vars.status_kode_unik}}.{{vars.code_used}}\n\nSilahkan masukkan kode unik dengan benar."
-                    ],
-                    "collect": {
-                      "key": "_answ_submit_kode_unik_gagal",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "tukar_hadiah_gagal",
-                "script": [
-                  {
-                    "text": [
-                      "{{vars.error_message}}.\n\nSilahkan masukkan kode reward yang Bunda inginkan."
-                    ],
-                    "collect": {
-                      "key": "_answ_tukar_hadiah_gagal",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "daftar_akun_gagal",
-                "script": [
-                  {
-                    "text": [
-                      "Permintaan Bunda/Ayah belum dapat diproses. Silakan coba lagi.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_daftar_akun_gagal",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "submit_kode_unik_gagal_1",
-                "script": [
-                  {
-                    "text": [
-                      "{{vars.error_message}}\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_submit_kode_unik_gagal_1",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              },
-              {
-                "topic": "tukar_hadiah_gagal_1",
-                "script": [
-                  {
-                    "text": [
-                      "{{vars.error_message}}\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang buah hati tercinta. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n1. DAFTAR member\n2. SUBMIT kode unik \n3. LIHAT katalog rewards\n4. TUKAR POIN dengan rewards menarik\n5. CEK POIN untuk mengetahui jumlah poin\n6. TANYA CS \n7. TANYA EXPERT"
-                    ],
-                    "collect": {
-                      "key": "_answ_tukar_hadiah_gagal_1",
-                      "options": [
-                        {
-                          "default": true,
-                          "pattern": "default",
-                          "action": "next"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "action": "complete"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "topic": "on_timeout",
-        "script": [
-          {
-            "text": [
-              "Looks like you got distracted. We can continue later."
-            ]
-          },
-          {
-            "action": "timeout"
-          }
-        ]
-      },
-      {
-        "topic": "daftar_akun",
-        "script": [
-          {
-            "text": [
-              "Program ini hanya dapat diikuti oleh Bunda/Ayah dengan anak usia 12 bulan ke atas (12 bulan +1 hari) yang mengkonsumsi produk DANCOW Nutritods 1+/3+/5+.\n\nBunda/Ayah memilih untuk mendaftar akun baru, informasikan data diri Bunda dengan membalas pesan ini dengan format: NAMA LENGKAP#NAMA ANAK#TANGGAL LAHIR ANAK#EMAIL.\n\nTanggal lahir anak dalam format DD/MM/YYYY\n\nContoh: Dewi Ariani#Adinda#08/08/2017#ariani.dewi@gmail.com"
-            ],
-            "collect": {
-              "key": "_answ_daftar_akun",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "daftar_akun_konfirmasi",
-        "script": [
-          {
-            "text": [
-              "Apakah Bunda/Ayah memiliki KODE REGISTRASI? Jika ada, silakan masukan KODE REGISTRASI, jika tidak ada, silahkan ketik 0."
-            ],
-            "collect": {
-              "key": "_answ_daftar_akun_konfirmasi",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "daftar_akun_sukses",
-        "script": [
-          {
-            "text": [
-              "Terima kasih telah bergabung menjadi member DANCOW Parenting Rewards. Member ID Bunda/Ayah adalah *{{vars.member_code}}*. Sebuah email telah dikirimkan untuk Bunda/Ayah berisi panduan untuk melakukan login dan penggantian password di parentingrewards.dancow.co.id\n\nIkuti semarak double bonus poin bersama DANCOW Nutritods selama periode 1 - 31 mei 2020. Info lebih lengkap klik http://bit.ly/LebihBanyakLebihDekat\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_daftar_akun_sukses",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "submit_kode_unik",
-        "script": [
-          {
-            "text": [
-              "Bunda/Ayah memilih untuk submit kode unik pada akun *{{vars.member_code}}*. Silahkan masukkan kode unik."
-            ],
-            "collect": {
-              "key": "_answ_submit_kode_unik",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "submit_kode_unik_sukses",
-        "script": [
-          {
-            "text": [
-              "Selamat Bunda/Ayah telah berhasil submit kode unik dan mendapatkan *{{vars.poin_submitted}}*. Total Poin DANCOW Parenting Rewards Bunda/Ayah saat ini adalah *{{vars.current_balance}}*. Ikuti Promo Ramadhan DANCOW dan dapatkan double bonus poin selama periode 1 - 31 May 2020. Info lebih lengkap klik link http://bit.ly/LebihBanyakLebihDekat\n\nTingkatkan terus poin Bunda/Ayah dan tukarkan dengan berbagai hadiah menarik.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_submit_kode_unik_sukses",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "daftar_rewards",
-        "script": [
-          {
-            "text": [
-              "Untuk melihat katalog hadiah, Bunda/Ayah dapat mengunjungi {{vars.link_catalog}} atau mengunduhnya dengan mengklik link berikut ini : {{vars.download_catalog}}\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_daftar_rewards",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "tukar_hadiah",
-        "script": [
-          {
-            "text": [
-              "Bunda/Ayah memilih untuk tukar hadiah. Silakan masukkan kode reward yang Bunda inginkan."
-            ],
-            "collect": {
-              "key": "_answ_tukar_hadiah",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "tukar_hadiah_sukses",
-        "script": [
-          {
-            "text": [
-              "Permintaan Bunda/Ayah sedang diproses. Mohon menunggu 2x24 jam hari kerja. Untuk informasi lebih lanjut silahkan hubungi 0800 1821028 (tekan 2).\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_tukar_hadiah_sukses",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "cek_poin",
-        "script": [
-          {
-            "text": [
-              "Bunda/Ayah memilih untuk cek poin. Poin Bunda/Ayah untuk member ID *{{vars.member_code}}* pada tanggal {{vars.date}} adalah *{{vars.current_balance}}* poin. Tingkatkan terus poin Bunda/Ayah dan tukarkan dengan berbagai hadiah menarik.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_cek_poin",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "edit_email",
-        "script": [
-          {
-            "text": [
-              "Perubahan email terdaftar hanya bisa dilakukan melalui Nestle Consumer Services di nomor 08001821028(tekan 2). Syarat dan ketentuan berlaku.\n\nApakah ada lagi yang Bunda butuhkan?\n\n1. Daftar Akun\n2. Submit Kode Unik\n3. Lihat Daftar Hadiah\n4. Tukar Hadiah\n5. Cek Point Balance\n6. Edit Email\n7. Reset Password\n\nSilahkan Bunda balas dengan mengetik nomor pada pilihan di atas."
-            ],
-            "collect": {
-              "key": "_answ_edit_email",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "reset_password",
-        "script": [
-          {
-            "text": [
-              "Perubahan password bisa dilakukan pada website parentingrewards.dancow.id. Klik MASUK dan pilih Lupa Password, lalu ikuti petunjuk. Info lebih lanjut hubungi 08001821028(tekan 2). Syarat dan ketentuan berlaku.\n\nApakah ada lagi yang Bunda butuhkan?\n\n1. Daftar Akun\n2. Submit Kode Unik\n3. Lihat Daftar Hadiah\n4. Tukar Hadiah\n5. Cek Point Balance\n6. Tanya CS\n7. Tanya Expert\n\nSilahkan Bunda balas dengan mengetik nomor pada pilihan di atas."
-            ],
-            "collect": {
-              "key": "_answ_reset_password",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "nomor_tidak_terdaftar",
-        "script": [
-          {
-            "text": [
-              "Nomor Bunda/Ayah belum terdaftar sebagai member. Silahkan DAFTAR sekarang.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_nomor_tidak_terdaftar",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "submit_kode_unik_gagal",
-        "script": [
-          {
-            "text": [
-              "{{vars.status_kode_unik}}\n\nSilahkan masukkan kode unik dengan benar atau ketik MENU untuk kembali ke menu awal."
-            ],
-            "collect": {
-              "key": "_answ_submit_kode_unik_gagal",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "tukar_hadiah_gagal",
-        "script": [
-          {
-            "text": [
-              "{{vars.error_message}}\n\nSilahkan masukkan kode rewards dengan benar atau ketik MENU untuk kembali ke menu awal."
-            ],
-            "collect": {
-              "key": "_answ_tukar_hadiah_gagal",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "daftar_akun_gagal",
-        "script": [
-          {
-            "text": [
-              "{{vars.error_message}}\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_daftar_akun_gagal",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "submit_kode_unik_gagal_1",
-        "script": [
-          {
-            "text": [
-              "Bunda/Ayah telah melebihi batas harian submit kode unik. Silahkan lihat syarat dan ketentuan di link parentingrewards.dancow.co.id/petunjuk-program.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_submit_kode_unik_gagal_1",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "tukar_hadiah_gagal_1",
-        "script": [
-          {
-            "text": [
-              "Bunda/Ayah telah melebihi batas harian penukaran reward. Silahkan lihat syarat dan ketentuan di link parentingrewards.dancow.co.id/petunjuk-program.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_tukar_hadiah_gagal_1",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "tukar_hadiah_additional",
-        "script": [
-          {
-            "text": [
-              "Silahkan masukkan {{vars.additional_param}}."
-            ],
-            "collect": {
-              "key": "_answ_tukar_hadiah_additional",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "menu_utama",
-        "script": [
-          {
-            "text": [
-              "Layanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_menu_utama",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "exception",
-        "script": [
-          {
-            "text": [
-              "Format yang Bunda/Ayah kirim belum sesuai, mohon cek kembali format yang dikirimkan.\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_exception",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "consent_tidak_setuju",
-        "script": [
-          {
-            "text": [
-              "Bunda/Ayah wajib menjawab \"Ya\" sebelum dapat melanjutkan pembicaraan."
-            ],
-            "collect": {
-              "key": "_answ_consent_tidak_setuju",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "daftar_akun_format_salah",
-        "script": [
-          {
-            "text": [
-              "Format yang Bunda/Ayah kirim belum sesuai, mohon cek kembali format yang dikirimkan."
-            ],
-            "collect": {
-              "key": "_answ_daftar_akun_format_salah",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "cs_tidak_tersedia",
-        "script": [
-          {
-            "text": [
-              "Dear, Bunda/Ayah {{vars.name}}. Terima kasih telah menghubungi WhatsApp DANCOW Parenting Center. Jam operasional kami adalah Senin – Jumat Jam 08.00 – 17.00 WIB (tidak termasuk hari libur nasional). Untuk informasi lebih lanjut, silahkan hubungi kami di jam operasional tersebut atau kunjungi Facebook DANCOW Parenting Center dan nomor telepon bebas pulsa Nestlé Consumer Services di 0800-1821028."
-            ]
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "expert_tidak_tersedia",
-        "script": [
-          {
-            "text": [
-              "Dear, Bunda/Ayah {{vars.name}}. Terima kasih telah menghubungi WhatsApp DANCOW Parenting Center. Jam operasional Expert kami adalah Senin – Jumat Jam 08.00 – 12.00 dan 13.00 – 17.00 WIB  (tidak termasuk hari libur nasional). Untuk berkonsultasi dengan Expert mengenai tumbuh kembang dan nutrisi Si Buah Hati, silahkan hubungi kami kembali di jam operasional tersebut."
-            ]
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "nomor_tidak_terdaftar_expert",
-        "script": [
-          {
-            "text": [
-              "Nomor Moms/Dads belum terdaftar sebagai member. Silahkan kembali ke menu awal dengan ketik *MENU* lalu ketik *1* untuk DAFTAR member agar bisa berkonsultasi dengan tim LACTOGROW Expert dibawah ini:\n\n• *Dokter Spesialis Gizi* Klinik dr. Amalia, Sp. GK: Setiap Rabu 10.00 - 12.00 WIB\n• *Dokter Spesialis Anak* dr. Kanya Ayu P., Sp. A: Setiap Kamis 13.00 - 15.00 WIB\n• *Psikolog* Putu Pradnya Dewi Andani, M.Psi, Psikolog: Setiap Jumat 14.00 – 16.00 WIB"
-            ],
-            "collect": {
-              "key": "_answ_nomor_tdk_terdaftar_exp",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "sampel_gratis",
-        "script": [
-          {
-            "text": [
-              "Khusus pengguna baru, Bunda/Ayah {{vars.name}} bisa mendapatkan sample gratis DANCOW 1+ 200 gram dengan klik link berikut  https://www.dancow.co.id/dpc/free-sample\n\nLayanan Whatsapp DANCOW Parenting Center siap membantu Bunda/Ayah menemani tumbuh kembang Si Buah Hati. Silahkan pilih menu informasi yang Bunda/Ayah butuhkan dengan mengetik nomor pilihan dibawah ini :\n\n*1*. *DAFTAR* member\n*2*. *SUBMIT* kode unik \n*3*. *LIHAT* katalog rewards\n*4*. *TUKAR POIN* dengan rewards menarik\n*5*. *CEK POIN* untuk mengetahui jumlah poin\n*6*. *TANYA CS* untuk pertanyaan dan bantuan\n*7*. *TANYA EXPERT* untuk konsultasi tumbuh kembang dan nutrisi\n*8*. *DAPATKAN SAMPEL* Gratis DANCOW dengan Nutritods\n\nDANCOW dengan Nutritods kini hadir dengan Inovasi Baru tanpa gula tambahan (sukrosa), lebih banyak laktosa, dan manfaat perlindungan dengan _Lactobacillus rhamnosus_, serta nutrisi penting lainnya untuk mendukung tumbuh kembang Si Buah Hati."
-            ],
-            "collect": {
-              "key": "_answ_sampel_gratis",
-              "options": [
-                {
-                  "default": true,
-                  "pattern": "default",
-                  "action": "next"
-                }
-              ]
-            }
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "resp_cs",
-        "script": [
-          {
-            "text": [
-              "Pertanyaan atau permintaan Bunda/Ayah {{vars.name}} sudah kami sampaikan ke CS DANCOW Parenting Center. Mohon menunggu kami akan segera membantu Bunda/Ayah. Terima kasih."
-            ]
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
-        "topic": "resp_expert",
-        "script": [
-          {
-            "text": [
-              "Pertanyaan atau permintaan Bunda/Ayah {{vars.name}} sudah kami sampaikan ke tim Expert DANCOW Parenting Center. Mohon menunggu, tim Expert kami akan segera menjawab pertanyaan Bunda/Ayah. Terima kasih."
+              "Hello Human!",
+              "How do you do?",
+              "Nice to meet you Human.",
+              "Hi!",
+              "How’s it going?",
+              "Hey!",
+              "Hey there!",
+              "Howdy!",
+              "G`day human!",
+              "Salut!",
+              "Ciao!",
+              "Hola!",
+              "Shalom!"
             ]
           },
           {
@@ -1274,9 +30,32 @@
         ]
       }
     ],
-    "id": "nestle",
-    "modified": "2020-05-05T04:43:35.424Z",
-    "name": "nestle"
+    "triggers": [
+      {
+        "pattern": "hell.*",
+        "type": "regexp",
+        "id": "495"
+      },
+      {
+        "type": "string",
+        "pattern": "hello"
+      },
+      {
+        "type": "string",
+        "pattern": "hey"
+      },
+      {
+        "type": "string",
+        "pattern": "hi"
+      },
+      {
+        "type": "string",
+        "pattern": "howdy"
+      }
+    ],
+    "variables": [],
+    "modified": "2018-12-12T15:23:41.416Z",
+    "name": "hello"
   },
   {
     "command": "damcorp",
@@ -1289,6 +68,11 @@
       }
     ],
     "variables": [
+      {
+        "name": "email",
+        "type": "string",
+        "id": 163
+      },
       {
         "name": "question_1",
         "type": "string"
@@ -1317,15 +101,28 @@
         ]
       },
       {
-        "topic": "on_timeout",
+        "topic": "menu_utama",
         "script": [
           {
             "text": [
-              "Looks like you got distracted. We can continue later."
+              "Silahkan pilih kebutuhan Anda:\n1. WhatsApp Business API\n2. Pawoon POS\n3. Digital Kiosk\n4. Digital Loker\n5. Flo Payment System\n6. Self Order System - Digiresto\n7. GOWES Bike Sharing\n8. Smart EDC\n9. Cloud Advertising Platform - Digital\nSignage and Trade Marketing\n10.Digital HR\n10. E-commerce Hub (Digital Product\nAggregator)\n11. Mkopi\n12. Cloud Kitchen Virtual Foodcourt\n13. Digital Travel and Travel Agent\nNetwork\n14. Media and Entertainment\n15. SMS, Voice, LBA, and IOT Service\nProvider\n16. Integrated Brand Communication."
             ]
           },
           {
-            "action": "timeout"
+            "action": "complete"
+          }
+        ]
+      },
+      {
+        "topic": "_answ_default",
+        "script": [
+          {
+            "text": [
+              "1"
+            ]
+          },
+          {
+            "action": "complete"
           }
         ]
       },
@@ -1356,25 +153,13 @@
         ]
       },
       {
-        "topic": "_answ_default",
-        "script": [
-          {
-            "text": [
-              "1"
-            ]
-          },
-          {
-            "action": "complete"
-          }
-        ]
-      },
-      {
         "topic": "ask_company",
         "script": [
           {
             "text": [
               "Masukkan nama perusahaan anda."
-            ]
+            ],
+            "collect": null
           },
           {
             "action": "complete"
@@ -1399,7 +184,7 @@
         "script": [
           {
             "text": [
-              "This is ask_email"
+              "Masukkan alamat email anda."
             ]
           },
           {
@@ -1412,8 +197,24 @@
         "script": [
           {
             "text": [
-              "majumakmur@gmail.com"
-            ]
+              "majumakmurgmail.com"
+            ],
+            "collect": {
+              "key": "email",
+              "options": [
+                {
+                  "default": true,
+                  "pattern": "default",
+                  "action": "repeat"
+                },
+                {
+                  "pattern": "majumakmurgmail.com",
+                  "type": "string",
+                  "action": "ask_location"
+                }
+              ],
+              "multiple": false
+            }
           },
           {
             "action": "complete"
@@ -1438,7 +239,7 @@
         "script": [
           {
             "text": [
-              "Jakarta"
+              "jakarta"
             ]
           },
           {
@@ -1447,11 +248,37 @@
         ]
       },
       {
-        "topic": "menu_utama",
+        "topic": "ask_selfie",
         "script": [
           {
             "text": [
-              "Silahkan pilih kebutuhan Anda:\n1. WhatsApp Business API\n2. Pawoon POS\n3. Digital Kiosk\n4. Digital Loker\n5. Flo Payment System\n6. Self Order System - Digiresto\n7. GOWES Bike Sharing\n8. Smart EDC\n9. Cloud Advertising Platform - Digital\nSignage and Trade Marketing\n10.Digital HR\n10. E-commerce Hub (Digital Product\nAggregator)\n11. Mkopi\n12. Cloud Kitchen Virtual Foodcourt\n13. Digital Travel and Travel Agent\nNetwork\n14. Media and Entertainment\n15. SMS, Voice, LBA, and IOT Service\nProvider\n16. Integrated Brand Communication."
+              "Kirim foto selfie anda."
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      },
+      {
+        "topic": "_answ_selfie",
+        "script": [
+          {
+            "text": [
+              "This is _answ_selfie"
+            ]
+          },
+          {
+            "action": "complete"
+          }
+        ]
+      },
+      {
+        "topic": "_answ_menu-utama",
+        "script": [
+          {
+            "text": [
+              "2/ Pawoon"
             ]
           },
           {
@@ -1460,8 +287,7 @@
         ]
       }
     ],
-    "id": "d05290b6-85fb-460e-a2d7-384cac27be36",
-    "modified": "2020-05-15T06:57:42.609Z",
-    "name": "damcorp"
+    "id": "eb93c48f-baca-4ce1-a2ed-d08045199405",
+    "modified": "2020-05-15T09:54:04.284Z"
   }
 ]
