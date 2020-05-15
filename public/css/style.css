@@ -1,0 +1,78 @@
+body {
+    overflow: hidden;
+}
+
+* {
+    background: url('/preview/symbols-bg.png') no-repeat 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.looa-logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+    background: transparent;
+}
+
+.logo {
+    width:341px;
+    padding: 72px 0; 
+    position: relative; 
+    /* margin-bottom: -71px" */
+    background: transparent;
+}
+
+.content {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.paralax-background {
+    width:991px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 116px;
+    z-index: 1;
+}
+
+.robot {
+    width:408px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    position: relative;
+    background: transparent;
+    top: 18px;
+}
+
+.button-goTo-admin {
+    width: 154px;
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 72px;
+    background: transparent;
+}
+
+.bg-button {
+    width:116px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: relative;
+}
